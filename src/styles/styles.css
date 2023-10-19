@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-family: "Hachi Maru Pop", cursive, Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --blue-sky: #99cdd8;
+  --blue-clever: #daebe3;
+  --creme: #fde8d3;
+  --rose: #f3c3b2;
+  --blue-zinc: #cfd6c4;
+  --gray: #657166;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: var(--rose) url("../../assets/bg.svg") no-repeat center center
+    fixed;
+  background-size: contain;
+  overflow: hidden;
+}
+
+main {
+  margin: auto;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-message {
+  width: 30rem;
+  height: 10rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--creme);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2em;
+  font-weight: bold;
+}
+
+input {
+  padding: 1rem 3rem;
+  background-color: var(--gray);
+  color: var(--creme);
+}
+input::placeholder {
+  color: var(--rose);
+}
+
+.play-ignore-btns {
+  display: flex;
+  gap: 1rem;
+}
+.yes-no-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  color: var(--gray);
+  padding: 0.7rem;
+  width: 7rem;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.play-btn {
+  background-color: var(--blue-sky);
+}
+.ignore-btn {
+  background-color: var(--blue-zinc);
+}
+
+.yes-btn {
+  background-color: var(--blue-sky);
+  font-weight: bold;
+  cursor: pointer;
+}
+.no-btn {
+  background-color: var(--blue-zinc);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.no-btn-area {
+  display: block;
+  position: relative;
+  transition: all 0.4s ease;
+  width: 9rem;
+  height: 6rem;
+  padding: 1rem;
+  transform: translate(0, -1rem);
+}
+
+.runningWay:hover {
+  transform: translate(20px, 40px);
+}
